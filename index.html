@@ -4,8 +4,8 @@
   <title>Google Docs Content</title>
   <script>
     async function fetchDocContent() {
-      const docId = '1tUiezpziazNqz_gbsAIYYt5ZWhufh7F-C9ft50YrMq4'; // Thay thế bằng ID của Google Doc bạn muốn lấy
-      const response = await fetch(`https://script.google.com/macros/s/AKfycbxDc_LF4bnN1OAQE9Qk4jnP8rcXyOFxVZYIuHtDoeueE4SiGH6r_UNUlBTfSaq2LEtX/exec?docId=${docId}`);
+      const docId = '1HyT7_bGuE6kJWikxMV0r_keCefhd2aIQmJcPqLG30g0'; // Thay thế bằng ID của Google Doc bạn muốn lấy
+      const response = await fetch(`https://script.google.com/macros/s/AKfycbzPOryCuSPtejt_t5bWZj8Wvtyd59rjfvUDbhmdrSXPppTmjPHnphdPCrY-KPIJh4uo/exec?docId=${docId}`);
       const data = await response.json();
       const contentDiv = document.getElementById('content');
       for (const key in data) {
